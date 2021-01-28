@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+img{
+    width:100%; height:300px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns to atck horzontally on decreased screen size*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+   word-wrap: break-word;
+}
+/* CSS for show more */
+button{
+    border: 0px;
+}
+#more1,#more2,#more3{
+    display: none;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Responsive Column Cards</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/Islamabad.jpg" alt="Islamabad monument" >
+      <h3>Islamabad monument</h3>
+      <p>The Pakistan Monument is a National Monument and Heritage Museum
+        <span id="more1"> located on the Western Shakarparian Hills in Islamabad. It was constructed to symbolise the unity of the Pakistanis.</span> <button id="btn1" onclick=myFunction(this.id)>...</button>
+      </p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Lahore.jpg" alt="Lahore Fort">
+      <h3>Lahore Fort</h3>
+      <p>The Lahore Fort is a citadel in the city of Lahore, Punjab, Pakistan.
+        <span id="more2"> The fortress is located at the northern end of walled city Lahore, and spreads over an area greater than 20 hectares.</span> <button id="btn2" onclick=myFunction(this.id)>...</button>
+      </p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/Karachi.jpg" alt="Karachi beach">
+      <h3>Karachi Beach</h3>
+      <p>Clifton Beach, also known as Sea View, in Karachi, Sindh, Pakistan 
+        <span id="more3"> is located on the Arabian Sea. It stretches from Karachi to Ormara. The beach is very popular in Pakistan.</span> <button id="btn3" onclick=myFunction(this.id)>...</button>
+      </p>
+    </div>
+  </div>
+  
+  <script>
+    function myFunction(btn_id) 
+    {
+      id= btn_id.replace("btn","");
+      console.log("pressed"+id);
+      var more = document.getElementById("more"+id);
+      var btn = document.getElementById("btn"+id);
+    
+      if (btn.innerHTML === "less") {
+        btn.innerHTML = "..."; 
+        more.style.display = "none";
+      } else {
+        btn.innerHTML = "less"; 
+        more.style.display = "inline";
+      }
+    }
+    </script>
+</body>
+</html>
