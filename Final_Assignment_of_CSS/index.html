@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none;}
+.dot{border-radius:50%; background-color:transparent;}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+.w3-content,.w3-auto{max-width:inherit}
+.fa-phone, .fa-mobile-phone{ color:yellowgreen;/*margin:12px 5px;*/}
+.call_me{ margin-top:0.8vw; margin-bottom;:0.8vw}
+.panalogo{height:60px; width:auto;}
+
+.w3-display-container.mySlides{width:100%;height:400px;}
+#s1, #s2, #s3{
+    width:100%;height:400px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;}
+#s1{background-image: url("images/main-body-with.png");  }
+#s2{background-image: url("images/main-body-with-mid.png");    }
+#s3{background-image: url("images/main-body-with-blue.png");  }
+
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: white;
+}
+.slidesTextHeading{
+  color: #f2f2f2;
+  font-size: 4vw;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 22%;
+  left: 20%;
+  width: 60%;
+  text-align: center;
+}
+
+.prev_next{
+    top: -330px;
+    left: 0%;
+    position: relative;
+}
+#nav_dots{  top: -140px;
+  left: 0%;
+  position: relative;
+  }
+
+.myPlan:hover{
+transition: transform .1s;
+transform: scale(1.05); 
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-auto">
+    <div class="w3-container w3-row w3-large w3-black" >
+        <i class="fa fa-facebook-official w3-hover-opacity w3-section w3-margin-left"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-section w3-margin-left"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-section w3-margin-left"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-section  w3-margin-left"></i>
+        <a href="#" class="w3-button w3-green w3-text-black w3-hover-orange w3-round-large w3-tiny w3-right w3-margin-right call_me"><b>CALL ME BACK</b></a>
+        <i class="fa fa-phone w3-right w3-section w3-margin"><span class="w3-text-white">&nbsp; 03347681986</span></i>
+        <i class="fa fa-mobile-phone w3-right  w3-large w3-section"><span class="w3-text-white">&nbsp; 03347681987</span></i>
+    </div>
+    <!-- Navigation -->
+    <nav class="w3-container w3-bar w3-white ">
+        <img src="images/logo-2.png" alt="Panacloud" class="w3-bar-item panalogo">
+        <span class="w3-right">
+        <a href="#home" class="w3-padding-16 w3-button w3-bar-item w3-hover-white w3-border-white w3-bottombar w3-hover-border-orange ">WHY US</a>
+        <a href="#about" class="w3-padding-16 w3-button w3-bar-item w3-hover-white w3-border-white w3-bottombar w3-hover-border-orange ">ABOUT</a>
+        <a href="#plans" class="w3-padding-16 w3-button w3-bar-item w3-hover-white w3-border-white w3-bottombar w3-hover-border-orange ">PACKAGES</a>
+        <a href="#portfolio" class="w3-padding-16 w3-button w3-bar-item w3-hover-white w3-border-white w3-bottombar w3-hover-border-orange ">PORTFOLIO</a>
+        <a href="#contact" class="w3-padding-16 w3-button w3-bar-item w3-hover-white w3-border-white w3-bottombar w3-hover-border-orange ">PROCESS</a>
+        <a href="#" class="w3-padding-16 w3-button w3-bar-item w3-hover-white w3-border-white w3-bottombar w3-hover-border-orange ">REVIEWS</a>
+        <a href="#skills" class="w3-padding-16 w3-button w3-bar-item w3-hover-white w3-border-white w3-bottombar w3-hover-border-orange ">OUR SKILLS</a>
+        <a href="#contact" class="w3-padding-16 w3-button w3-bar-item w3-hover-white w3-border-white w3-bottombar w3-hover-border-orange ">CONTACT US</a>
+        </span>
+    </nav>
+  
+
+</div>
+
+<!-- Content -->
+<div class="w3-auto" >
+
+  <!-- Slideshow -->
+  <div class="w3-container" id="abc" >
+    <div class="w3-display-container mySlides" id="s1">
+        <div class="slidesTextHeading"> WE ARE THE EXPERTS
+            <p style="font-size: 1.5vw; font-weight: normal;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque commodi hic dicta tetur adipisicing elit. Neque commodi hic dicta.</p>
+        </div>
+    </div>
+
+    <div class="w3-display-container mySlides" id="s2">
+        <div class="slidesTextHeading"> DIVERSITY HEROES
+            <p style="font-size: 1.5vw; font-weight: normal;">Neque commodi hic dicta tetur adipisicing elit. Neque commodi hic dicta.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+
+    <div class="w3-display-container mySlides" id="s3">
+     <!-- <img src="images/main-body-with-blue.png" style="width:100%;height:400px;">  -->
+        <div class="slidesTextHeading"> CUSTOMER CENTERIC
+            <p style="font-size: 1.5vw; font-weight: normal;"> Neque commodi hic dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque commodi hic dicta tetur adipisicing elit.</p>
+        </div>
+    </div>
+    <a href="#" class="w3-button w3-center w3-orange w3-text-black w3-hover-green w3-round-large w3-margin-right " style="position: relative; left:45%; top:-140px"><b>READ MORE</b></a>
+
+    <!-- Slideshow next/previous buttons -->
+        <div class="w3-container w3-padding w3-xlarge prev_next"> 
+            <div class="w3-left " onclick="plusSlides(-1)"> <i class="fa fa-arrow-circle-left w3-text-white w3-hover-text-teal"></i></div>
+            <div class="w3-right " onclick="plusSlides(1)"> <i class="fa fa-arrow-circle-right w3-text-white w3-hover-text-teal"></i> </div>
+        </div>
+        <div class="w3-center" id="nav_dots">
+            <span class="w3-tag dot w3-border " onclick="currentSlide(1)"></span>
+            <span class="w3-tag dot w3-border " onclick="currentSlide(2)"></span>
+            <span class="w3-tag dot w3-border " onclick="currentSlide(3)"></span>
+        </div>
+  </div>
+  <!-- </div> -->
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-32">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+      <h3>Design</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3>Branding</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3>Consultation</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>Promises</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="plans">
+    <div class="w3-display-container" style="height:200px;">
+        <div class="w3-padding-24 w3-display-topmiddle" style="font-size:3vw; font-weight:bold">PRICING <span class="w3-text-green">PLANS</span></div>
+        <div class="w3-display-middle w3-center w3-text-grey" style="width: 60%;">
+            <p>Choose a pricing plan that fits your needs.</p>
+        </div>
+    </div>
+
+    <div class="w3-third myPlan" style="margin-bottom: 50px;">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-green w3-padding-large w3-hover-blue" style="position:relative; top:45px">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third myPlan" style="margin-bottom: 50px;">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-green w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-green w3-padding-large w3-hover-blue" style="position:relative; top:45px">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third myPlan" style="margin-bottom: 50px;">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large w3-hover-blue" style="position:relative; top:45px">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/team1.jpg" alt="John" style="width:100%; max-height:225px;">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/team2.png" alt="Mike" style="width:100%; max-height:225px;">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="images/team3.jpg" alt="Jane" style="width:100%; max-height:225px;">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-display-container">
+    <img src="images/main-icon.png" alt="About Us" style="width:100%">
+    <div class="w3-padding w3-margin w3-padding-64 w3-display-topleft" style="width:45%; font-size:1.2vw;">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem illo ipsa esse, minima iure hic cumque
+            enim sequi dolores officia voluptatum ut explicabo!
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis earum adipisci odio, sint tempore neque
+            ex ad rerum consequuntur perferendis a fugiat! Hic impedit est quae beatae in dolores sit sed sunt
+            accusantium ipsam.</p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit architecto aliquid accusantium
+            voluptates sed officiis consectetur maiores consequatur? Magnam perferendis quasi, recusandae, maxime
+            nulla quos reprehenderit inventore voluptate voluptatum, quis laborum officiis. Nemo voluptate ipsum
+            optio corporis sequi qui quas! Suscipit quasi ex sunt ipsum!</p>
+        <a href="#" class="w3-button w3-orange w3-text-black w3-hover-green w3-round-large w3-margin-right "><b>READ MORE</b></a>
+    </div>
+    <div class="w3-padding w3-display-topmiddle" style="font-size:3vw; font-weight:bold">ABOUT <span class="w3-text-green">US</span></div>
+  </div>
+
+<!-- OUR SERVICES -->
+<div class="w3-row-padding" id="skills">
+    <div class="w3-display-container" style="height:200px;">
+        <div class="w3-padding-24 w3-display-topmiddle" style="font-size:3vw; font-weight:bold">OUR <span class="w3-text-green">SERVICES</span></div>
+        <div class="w3-display-middle w3-center w3-text-grey" style="width: 60%;font-size:1.2vmax;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit architecto aliquid accusantium
+            voluptates sed officiis consectetur maiores consequatur.</p>
+        </div>
+    </div>
+  
+    <div class="w3-quarter">
+        <ul class="w3-ul w3-center w3-hover-shadow w3-round-large ">
+            <li class="w3-light-grey w3-padding-16 w3-round-large">
+                <img src="images/our-service.png" alt="servcies" style="height:20%; width:20%; position:relative; top:-40px;">
+                <h3>WEB DESIGN</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit architecto aliquid accusantium voluptates</p>
+                <a href="#" class="w3-text-green">Read More</a>
+            </li>
+        </ul>
+    </div>
+  
+    <div class="w3-quarter">
+        <ul class="w3-ul w3-center w3-hover-shadow w3-round-large ">
+            <li class="w3-light-grey w3-padding-16 w3-round-large">
+                <img src="images/our-service.png" alt="servcies" style="height:20%; width:20%; position:relative; top:-40px;">
+                <h3>GRPAHIC DESIGN</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit architecto aliquid accusantium voluptates</p>
+                <a href="#" class="w3-text-green">Read More</a>
+            </li>
+        </ul>
+    </div>
+      
+    <div class="w3-quarter">
+        <ul class="w3-ul w3-center w3-hover-shadow w3-round-large ">
+            <li class="w3-light-grey w3-padding-16 w3-round-large">
+                <img src="images/our-service.png" alt="servcies" style="height:20%; width:20%; position:relative; top:-40px;">
+                <h3>BRANDING</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit architecto aliquid accusantium voluptates</p>
+                <a href="#" class="w3-text-green">Read More</a>
+            </li>
+        </ul>
+    </div>
+      
+    <div class="w3-quarter">
+        <ul class="w3-ul w3-center w3-hover-shadow w3-round-large ">
+            <li class="w3-light-grey w3-padding-16 w3-round-large">
+                <img src="images/our-service.png" alt="servcies" style="height:20%; width:20%; position:relative; top:-40px;">
+                <h3>MARKETING</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit architecto aliquid accusantium voluptates</p>
+                <a href="#" class="w3-text-green">Read More</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+ <!-- PORTFOLIO -->
+  <div class="w3-row-padding w3-black" id="portfolio">
+    <div class="w3-display-container" style="height:200px;">
+        <div class="w3-padding-24 w3-display-topmiddle" style="font-size:3vw; font-weight:bold">OUR <span class="w3-text-green">PORTFOLIO</span></div>
+        <div class="w3-display-middle w3-center w3-text-grey" style="width: 60%;font-size:1.2vmax;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit architecto aliquid accusantium
+            voluptates sed officiis consectetur maiores consequatur.</p>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-padding-16">
+    <img src="images/footer-pic-1.png" alt="pic1" style="width: 18%;">
+    <img src="images/footer-pic-2.png" alt="pic1" style="width: 18%;">
+    <img src="images/footer-pic-3.png" alt="pic1" style="width: 18%;">
+    <img src="images/footer-pic-4.png" alt="pic1" style="width: 18%;">
+    <img src="images/footer-pic-5.png" alt="pic1" style="width: 18%;">
+
+    <img src="images/footer-pic-6.png" alt="pic1" style="width: 18%;">
+    <img src="images/footer-pic-7.png" alt="pic1" style="width: 18%;">
+    <img src="images/footer-pic-8.png" alt="pic1" style="width: 18%;">
+    <img src="images/footer-pic-9.png" alt="pic1" style="width: 18%;">
+    <img src="images/footer-pic-10.png" alt="pic1" style="width: 18%;">
+    </div>
+  
+  </div>
+
+ <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+  </form>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>Footer</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
+    
+
+</body>
+</html>
